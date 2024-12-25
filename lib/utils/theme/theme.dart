@@ -1,24 +1,27 @@
-import 'package:fcommerce/utils/custom_themes/elevated_button_theme.dart';
-import 'package:fcommerce/utils/custom_themes/text_theme.dart';
-import 'package:fcommerce/utils/custom_themes/chip_theme.dart';
-import 'package:fcommerce/utils/custom_themes/appbar_theme.dart';
-import 'package:fcommerce/utils/custom_themes/bottom_sheet_theme.dart';
-import 'package:fcommerce/utils/custom_themes/checkbox_theme.dart';
-import 'package:fcommerce/utils/custom_themes/outlined_button_theme.dart';
-import 'package:fcommerce/utils/custom_themes/text_field_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:fcommerce/utils/theme/widget_themes/appbar_theme.dart';
+import 'package:fcommerce/utils/theme/widget_themes/bottom_sheet_theme.dart';
+import 'package:fcommerce/utils/theme/widget_themes/checkbox_theme.dart';
+import 'package:fcommerce/utils/theme/widget_themes/chip_theme.dart';
+import 'package:fcommerce/utils/theme/widget_themes/elevated_button_theme.dart';
+import 'package:fcommerce/utils/theme/widget_themes/outlined_button_theme.dart';
+import 'package:fcommerce/utils/theme/widget_themes/text_field_theme.dart';
+import 'package:fcommerce/utils/theme/widget_themes/text_theme.dart';
 
-class FAppTheme {
-  FAppTheme._();
+import '../constants/colors.dart';
+
+class TAppTheme {
+  TAppTheme._();
 
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
+    disabledColor: FColors.grey,
     brightness: Brightness.light,
-    primaryColor: Colors.blue,
+    primaryColor: FColors.primary,
     textTheme: FTextTheme.lightTextTheme,
     chipTheme: FChipTheme.lightChipTheme,
-    scaffoldBackgroundColor: Colors.white,
+    scaffoldBackgroundColor: FColors.white,
     appBarTheme: FAppBarTheme.lightAppBarTheme,
     checkboxTheme: FCheckboxTheme.lightCheckboxTheme,
     bottomSheetTheme: FBottomSheetTheme.lightBottomSheetTheme,
@@ -30,11 +33,12 @@ class FAppTheme {
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
+    disabledColor: FColors.grey,
     brightness: Brightness.dark,
-    primaryColor: Colors.blue,
+    primaryColor: FColors.primary,
     textTheme: FTextTheme.darkTextTheme,
     chipTheme: FChipTheme.darkChipTheme,
-    scaffoldBackgroundColor: Colors.black,
+    scaffoldBackgroundColor: FColors.black,
     appBarTheme: FAppBarTheme.darkAppBarTheme,
     checkboxTheme: FCheckboxTheme.darkCheckboxTheme,
     bottomSheetTheme: FBottomSheetTheme.darkBottomSheetTheme,
