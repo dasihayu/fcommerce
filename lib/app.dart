@@ -1,4 +1,4 @@
-import 'package:fcommerce/utils/themes/theme.dart';
+import 'package:fcommerce/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatelessWidget {
