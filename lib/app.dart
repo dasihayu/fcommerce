@@ -11,7 +11,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: FTexts.appName,
-      themeMode: ThemeMode.system,
+      themeMode: ThemeMode.light,
       theme: FAppTheme.lightTheme,
       darkTheme: FAppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
